@@ -15,4 +15,3 @@ SELECT
 	[item_id]
 	,AVG([Total Sold])
 FROM [Sales] 
-GROUP BY [item_id]
