@@ -1,0 +1,12 @@
+Convory Report
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP 10009 [ALERT_LOG_ID]
+      ,[SYSTEM]
+      ,[PATH]
+      ,[STATE_NAME]
+	  ,[ACTIVE_TIMESTAMP]
+      ,[CLEARED_TIMESTAMP]    
+  FROM [DataWarehouseSupport].[dbo].[HMI_Alert_Log]
+  where ACTIVE_TIMESTAMP between '10/23/2013' and '1/25/2014'
+  order by ACTIVE_TIMESTAMP desc

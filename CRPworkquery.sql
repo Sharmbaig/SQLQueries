@@ -1,0 +1,21 @@
+
+SELECT 
+      [work_seq_num]
+      ,[work_type]
+      ,[overall_priority]
+      ,[prox_id]
+      ,[location_type_from]
+      ,[location_type_to]
+      ,[mover_id]
+      ,[suspend_code]
+      ,[usr_id]
+      ,[create_date]
+      ,[create_time]
+      ,[cyc_id]
+      ,[description1]
+      ,[description2]
+      ,[description3]
+      ,[rstk_class]
+      ,[wave_seq_num]
+  FROM [PH_PROD_OLD2].[dbxx].[work_pool]
+  WHERE [work_type] = 'CRP'
